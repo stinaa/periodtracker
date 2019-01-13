@@ -1,0 +1,3 @@
+predictNextPeriodStartDate = (periods) => {
+  return '🤷'
+}

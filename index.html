@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Period tracker</title></title>
-    <meta
-      name="viewport"
-      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover"
-    />
+    <title>My period tracking algorithm</title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400" rel="stylesheet">
+    <link rel="stylesheet" href="./flatpickr/flatpickr.min.css">
     <link rel="stylesheet" href="./style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   </head>
   <body>
-    <input id="dates" type="text" placeholder="Select dates" />
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <main class="page">
+      <header class="head">
+        <h1 class="title">My period algorithm</h1>
+
+        <h2 class="predictionTitle">Next period will start:</h2>
+
+        <p id="prediction" class="prediction"></p>
+      </header>
+
+      <div class="app">
+        <div class="calendar">
+          <input id="dates" class="datesInput" type="text" placeholder="Select dates" style="display: none;" />
+          
+          <button id="clear" class="clear" onclick="clearDates()">Clear</button>
+        </div>
+      </div>
+    </main>
+    
+    <script src="./flatpickr/flatpickr.js"></script>
+    <script src="./algo.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
