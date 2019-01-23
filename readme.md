@@ -6,6 +6,7 @@ Do this by using the data that gets presented to you by the app.
 
 
 ## Get started
-- Open `index.html` in your browser
-- Open the whole folder in your favourite editor
-- You will find your challenge in `algorithm.js`
+- Click the green "Clone or download" button and select "Download ZIP"
+- From the downloaded folder, open `index.html` in your browser
+- Open the whole folder in your favorite editor. If you don't have one, download [Sublime Text](https://www.sublimetext.com)
+- You will find your challenge in `js/algorithm.js`
