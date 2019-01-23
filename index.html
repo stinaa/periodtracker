@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400" rel="stylesheet">
-    <link rel="stylesheet" href="./flatpickr/flatpickr.min.css">
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./js/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="./styles/style.css"/>
   </head>
   <body>
     <main class="page">
@@ -22,13 +22,14 @@
         <div class="calendar">
           <input id="dates" class="datesInput" type="text" placeholder="Select dates" style="display: none;" />
           
-          <button id="clear" class="clear" onclick="clearDates()">Clear</button>
+          <button id="clear" class="clear" onclick="app.clearDates()">Clear</button>
         </div>
       </div>
     </main>
     
-    <script src="./flatpickr/flatpickr.js"></script>
-    <script src="./algo.js"></script>
-    <script src="./app.js"></script>
+    <script src="./js/flatpickr/flatpickr.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/algorithm.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
