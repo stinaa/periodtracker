@@ -4,6 +4,7 @@ class PeriodAlgo {
     this.helpers = helpers
   }
 
+  // Write your algorithm here!
   predictNextPeriodStartDate (data) {
     // Tip! check in your browsers console to see how the data looks like
     console.log(`\n\n\nWill run the algorithm based on this data:\n`, data)
