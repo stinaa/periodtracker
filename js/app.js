@@ -7,7 +7,9 @@ class PeriodTracker {
 
   init() {
     // Get dates from localStorage and parse them to javascript date objects
-    let dates = JSON.parse(localStorage.getItem('period_dates')).map((d) => {
+    let dates = JSON.parse(localStorage.getItem('period_dates')) || []
+
+    dates = dates.map((d) => {
       return new Date(d)
     })
 
