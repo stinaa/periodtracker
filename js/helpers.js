@@ -24,7 +24,7 @@ class Helpers {
     date.setDate(date.getDate() + days)
 
     // Return the modified date
-    return date;
+    return date
   }
 
 
