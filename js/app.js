@@ -1,7 +1,6 @@
 class PeriodTracker {
-  constructor(algo, helpers) {
+  constructor(algo) {
     this.algo = algo
-    this.helpers = helpers
     this.calendar
   }
 
@@ -81,7 +80,7 @@ class PeriodTracker {
       if (!dates[index + 1]) return
 
       // Count days between current date and next date
-      const daysBetween = this.helpers.getNumberOfDaysBetweenTwoDates(date, dates[index + 1])
+      const daysBetween = this.getNumberOfDaysBetweenTwoDates(date, dates[index + 1])
 
       // If its only 1 day between it means it is the same period
       if (daysBetween === 1) {
@@ -96,14 +95,27 @@ class PeriodTracker {
     return data
   }
 
+  getNumberOfDaysBetweenTwoDates(firstDate, secondDate) {
+    // This is the length of a day in milliseconds
+    const oneDay = 24 * 60 * 60 * 1000 // hours * minutes * seconds * milliseconds
+    
+    // Count the difference in days between firstDate and secondDate
+    const absoluteValue = Math.abs((firstDate.getTime() - secondDate.getTime()) / oneDay)
+
+    // Round the value
+    const days = Math.round(absoluteValue)
+
+    // Return number of days between the two dates
+    return days
+  }
+
   clearDates() {
     this.calendar.clear()
   }
 
 }
 
-const helpers = new Helpers()
-const algo = new PeriodAlgo(helpers)
-const app = new PeriodTracker(algo, helpers)
+const algo = new PeriodAlgo()
+const app = new PeriodTracker(algo)
 
 app.init()

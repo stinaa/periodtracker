@@ -8,5 +8,5 @@ Do this by using the data that gets presented to you by the app.
 ## Get started
 - Click the green "Clone or download" button and select "Download ZIP"
 - From the downloaded folder, open `index.html` in your browser
-- Open the whole folder in your favorite editor. If you don't have one, download [Sublime Text](https://www.sublimetext.com)
+- Open the whole folder in your favorite editor. If you don't have one, download [Atom](https://atom.io/)
 - You will find your challenge in `js/algorithm.js`
