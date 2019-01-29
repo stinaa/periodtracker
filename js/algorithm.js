@@ -8,14 +8,12 @@ class PeriodAlgo {
 
     // Step 1. Calculate the average cycle length
     // Tip! Use the numbers in the array data.cycleLengths to get the average value
-    const average = this.getAverageValueFromArrayOfNumbers(data.cycleLengths)
     
     // Step 2. Use the average cycle length to predict when the next cycle will start 
     // Tip! You might want to use data.currentCycleStart and the value you got from step 1 to get the new date
-    const nextPeriod = this.getNewDateByAddingDaysToDate(data.currentCycleStart, average)
 
     // Step 3. Return the predicted period date
-    return nextPeriod
+
   }
 
 
